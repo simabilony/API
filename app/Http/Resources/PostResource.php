@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Post;
 use http\Env\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -21,7 +22,5 @@ class PostResource extends JsonResource
             'body'=>$this->body,
         ];
     }
-    public function store (Request $request){
 
-    }
 }

@@ -26,6 +26,6 @@ Route::get('/', function () {
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::resource('posts',\App\Http\Controllers\Api\PostController::class);
+    Route::resource('posts',\App\Http\Controllers\PostController::class);
 });
 
